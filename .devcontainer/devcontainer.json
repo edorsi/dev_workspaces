@@ -8,6 +8,10 @@
   "remoteUser": "root",
   "containerUser": "root",
 
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,readonly"
+  ],
+
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "lts"
